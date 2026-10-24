@@ -1,0 +1,1 @@
+interface Window { musicSections?: { desktop: boolean; lookupTitle: (query: string) => Promise<unknown>; recognizeSong: (input: unknown) => Promise<unknown>; timedLyrics: (input: unknown) => Promise<unknown> }; }

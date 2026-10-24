@@ -1,0 +1,72 @@
+{
+  "name": "music-sections",
+  "version": "0.2.3",
+  "private": true,
+  "description": "Local song preparation and section playback for live music",
+  "main": "electron/main.cjs",
+  "author": "Music Sections",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "desktop": "npm run build && electron .",
+    "package:windows": "npm run build && electron-builder --win zip --x64",
+    "package:mac": "npm run build && electron-builder --mac dir",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:browser": "playwright test",
+    "test:desktop": "npm run build && node tests/desktop-smoke.mjs"
+  },
+  "dependencies": {
+    "fflate": "0.8.3",
+    "fft.js": "4.0.4",
+    "lucide-react": "1.54.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "shazamio-core": "1.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3",
+    "tsx": "^4.20.0",
+    "typescript": "5.9.3",
+    "vite": "8.3.4"
+  },
+  "build": {
+    "appId": "local.musicsections.app",
+    "productName": "Music Sections",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "zip"
+      ],
+      "signExecutable": false,
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "category": "public.app-category.music",
+      "identity": null,
+      "icon": "build/icon.icns"
+    },
+    "artifactName": "Music-Sections-${version}-${os}-${arch}.${ext}",
+    "extraFiles": [
+      {
+        "from": "docs/WINDOWS-START.txt",
+        "to": "START-HERE.txt"
+      }
+    ]
+  },
+  "type": "module"
+}

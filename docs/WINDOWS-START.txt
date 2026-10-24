@@ -1,0 +1,33 @@
+MUSIC SECTIONS — VERSION 0.2.3
+
+1. Extract the entire ZIP into a folder on a 64-bit Windows computer.
+2. Open Music Sections.exe. Keep the other extracted files beside it.
+3. Choose Try the practice track to test section jumps and repeat controls.
+4. Choose Add a song to import a ripped CD track or a normal song.
+5. Review automatic suggestions in Prepare; use Perform for large section buttons.
+
+Normal songs keep their vocals. This edition does not remove voices.
+Suggestions use musical changes and repeated passages; section names and boundaries need review.
+An optional matching vocal recording can help map section timings to a backing track.
+
+Choose Extra repeats (1–20), then press Repeat or R. The current pass finishes,
+the section plays that many extra times, then continues. Select Repeat again to cancel.
+The performance badge shows progress. Pause, Stop, and section jumps clear repeats.
+Loop section keeps repeating until switched off. Clicking another section jumps immediately
+and clears the repeat/loop. Pause retains the position; Stop returns to the beginning.
+
+Keyboard: Space = play/pause; Esc = stop; 1–9 = jump; R = counted repeat; L = loop.
+Text fields suppress playback shortcuts. Help is available inside the app.
+
+Playback and musical analysis work offline. Identify & improve sections uses internet access
+for Shazam fingerprint recognition and matching timed lyrics from LRCLIB. Audio stays local.
+Online help is enabled by default for new imports; uncheck it for local-only preparation.
+Saved section clues can be reused offline. Missing matches fall back to musical analysis.
+Title lookup is optional and requires internet access.
+Use the computer's default audio output; select the mixer/interface in Windows settings.
+
+Export song saves a .musicsections backup with audio and markers. Restore song backup
+imports it into another computer's library. The local library is separate from this folder.
+
+This portable application is unsigned. Windows execution and your church's audio setup
+still need testing. Use the practice track and a rehearsal before using it in a service.

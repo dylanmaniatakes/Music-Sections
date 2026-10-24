@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-09",
+  "archive": "release/Music-Sections-0.2.3-win-x64.zip",
+  "bytes": 157904349,
+  "sha256": "9a85a1baeab21bf9a6070bbeb2bbbb7d43b09418c0c7932bfa66561b6a4b3e40",
+  "windowsArchitecture": "x64",
+  "zipIntegrityPassed": true,
+  "packagedAppMatchesCurrentBuild": true,
+  "fingerprintWasmIncluded": true,
+  "testAudioExcluded": true,
+  "nativeExecution": "macOS Electron only; Windows execution unverified"
+}
