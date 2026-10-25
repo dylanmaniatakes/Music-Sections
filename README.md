@@ -2,6 +2,14 @@
 
 Music Sections is a local desktop player for backing tracks and songs with vocals. Prepare named sections once, then jump to a verse, repeat a chorus, or loop a passage during playback.
 
+## Start on macOS
+
+1. Extract `Music-Sections-0.2.3-mac-arm64.zip` on an Apple Silicon Mac.
+2. Copy `Music Sections.app` to Applications and open it.
+3. Select **Try the practice track** or **Add a song**.
+
+The macOS build is unsigned and not notarized. If macOS blocks opening it, attempt to open the app, then use **System Settings → Privacy & Security → Open Anyway** if you trust the build. Select your audio interface in macOS Sound settings before playback. No Node.js installation, account, or server is required.
+
 ## Start on Windows
 
 1. Extract `Music-Sections-0.2.3-win-x64.zip` into a folder on a 64-bit Windows computer.
@@ -93,7 +101,13 @@ To package a portable Windows application:
 npm run package:windows
 ```
 
-Windows archives are created in `release/`. No publishing or signing service is used.
+To build a macOS application for the build machine's architecture:
+
+```sh
+npm run package:mac
+```
+
+Build outputs are created in `release/`. No publishing or signing service is used.
 
 ### Checks
 

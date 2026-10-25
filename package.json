@@ -53,20 +53,26 @@
         "zip"
       ],
       "signExecutable": false,
-      "icon": "build/icon.ico"
+      "icon": "build/icon.ico",
+      "extraFiles": [
+        {
+          "from": "docs/WINDOWS-START.txt",
+          "to": "START-HERE.txt"
+        }
+      ]
     },
     "mac": {
       "category": "public.app-category.music",
       "identity": null,
-      "icon": "build/icon.icns"
+      "icon": "build/icon.icns",
+      "extraFiles": [
+        {
+          "from": "docs/MAC-START.txt",
+          "to": "START-HERE.txt"
+        }
+      ]
     },
-    "artifactName": "Music-Sections-${version}-${os}-${arch}.${ext}",
-    "extraFiles": [
-      {
-        "from": "docs/WINDOWS-START.txt",
-        "to": "START-HERE.txt"
-      }
-    ]
+    "artifactName": "Music-Sections-${version}-${os}-${arch}.${ext}"
   },
   "type": "module"
 }

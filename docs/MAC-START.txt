@@ -1,0 +1,23 @@
+MUSIC SECTIONS — VERSION 0.2.3 — APPLE SILICON MAC
+
+1. Copy Music Sections.app to Applications or another local folder.
+2. Open Music Sections.app.
+3. Choose Try the practice track to test section jumps and repeat controls.
+4. Choose Add a song to import a recording. Review suggested boundaries in Prepare.
+5. Use Perform for large section buttons.
+
+This build runs natively on Apple Silicon (arm64). It is unsigned and is not
+notarized by Apple. If macOS blocks it, use System Settings > Privacy & Security >
+Open Anyway after attempting to open it, only if you trust this local build.
+
+Playback and musical analysis work offline. Online help is enabled by default;
+uncheck it for local-only preparation. Song identification sends fingerprints,
+not the original audio, to an online recognition service.
+
+Select your mixer/interface as the default output in macOS Sound settings.
+Keyboard: Space = play/pause; Esc = stop; 1–9 = jump; R = counted repeat; L = loop.
+Export song creates a .musicsections backup with audio and markers. Restore song
+backup transfers it to another installation. Songs save in the local app library.
+
+Automatic boundaries and labels need listening review. Test your recordings,
+section transitions, and audio interface before using the app in a live service.
